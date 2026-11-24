@@ -9,7 +9,7 @@ description.fr = "Agrégateur de flux RSS avec une interface adaptée au mobile"
 
 version = "1.30.4~ynh1"
 
-maintainers = ["plopoyop"]
+maintainers = [""]
 
 [upstream]
 license = "AGPL-3.0-only"
@@ -48,7 +48,7 @@ ram.runtime = "50M"
     ask.fr = "Choisissez la langue de l'application"
     type = "select"
     choices = ["cz", "de", "en", "es", "fr", "he", "it", "kr", "nl", "oc", "pt", "ru", "tr", "zh-cn"]
-    default = "fr"
+    default = "en"
 
     [install.admin]
     type = "user"
@@ -60,7 +60,7 @@ ram.runtime = "50M"
     [resources.sources.main]
     url = "https://github.com/FreshRSS/FreshRSS/archive/refs/tags/1.30.4.tar.gz"
     sha256 = "4c750c794479e6158bfb4f970050a7083f4e3afdbaea3bc6063aba3a5df8d01d"
-    autoupdate.strategy = "latest_github_release"
+    autoupdate.strategy = "latest_github_commit"
 
     [resources.system_user]
 
